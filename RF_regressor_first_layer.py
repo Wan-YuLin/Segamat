@@ -13,10 +13,6 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
 
-# --- IMPORT MODULES ---
-from evaluation import filter_predictable_models
-
-
 
 # --- DEFINE FUNCTIONS ---
 def load_config(config_path="config.json"):
