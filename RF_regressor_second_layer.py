@@ -49,7 +49,8 @@ def second_RF_layer(x_data, y_data, params):
         n_estimators=int(params['n_estimators']),
         criterion=params['criterion'],
         max_depth=None if pd.isna(params['max_depth']) else int(params['max_depth']),
-        min_samples_leaf=int(params['min_samples_leaf'])
+        min_samples_leaf=int(params['min_samples_leaf']),
+        random_state=42, n_jobs=-1
     )
     model.fit(X_train, y_train)
     y_pred = model.predict(X_test)
