@@ -1,0 +1,44 @@
+{
+    "layer1_paths": {
+        "six_pathway": "tmm_final_six_pathway.csv",
+        "ref-shot_pathway": "tmm_final_ref-shot_pathway.csv",
+        "contigs_pathway": "tmm_final_contigs_pathway.csv",
+        "mags_pathway": "tmm_final_mags_pathway.csv",
+        "six_metabolite": "tmm_final_six_metabolite.csv",
+        "ref-shot_metabolite": "tmm_final_ref-shot_metabolite.csv",
+        "contigs_metabolite": "tmm_final_contigs_metabolite.csv",
+        "mags_metabolite": "tmm_final_mags_metabolite.csv",
+        "metadata": "metadata.xlsx",
+        "metabolite_list": "metabolite.xlsx",
+        "output_dir": "./results/"
+    },
+    "rf_params": {
+        "n_estimators": [100, 200, 300],
+        "criterion": ["squared_error", "absolute_error"],
+        "max_depth": [None, 10, 20],
+        "min_samples_leaf": [5, 7, 10]
+    },
+    "layer2_paths":{
+        "16S":{
+            "pathway": "tmm_final_six_pathway.csv",
+            "metabolite":"tmm_final_six_metabolite.csv",
+            "parms":"./results/16S/parms.csv"
+        },
+        "ref-shotgun":{
+            "pathway": "tmm_final_ref-shot_pathway.csv",
+            "metabolite":"tmm_final_ref-shot_metabolite.csv",
+            "parms":"./results/ref-shotgun/parms.csv"
+        },
+        "denovo-contigs":{
+            "pathway": "tmm_final_contigs_pathway.csv",
+            "metabolite":"tmm_final_contigs_metabolite.csv",
+            "parms":"./results/denovo-contigs/parms.csv"
+        },
+        "denovo-mags":{
+            "pathway": "tmm_final_mags_pathway.csv",
+            "metabolite":"tmm_final_mags_metabolite.csv",
+            "parms":"./results/denovo-mags/parms.csv"
+        }
+    }
+}
+
